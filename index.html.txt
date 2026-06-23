@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Sistema de Reservas</title>
+  <style>
+    /* Forzamos a la pantalla a ocupar el 100% real del celular sin scrolls artificiales */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Elimina el scroll del contenedor */
+      background-color: #ffffff;
+    }
+    /* Tu WebApp se estirará de forma nativa ocupando toda la pantalla */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pega aquí tu URL de Apps Script que termina en /exec -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbw4E11Il2mx-ZbnPEsyhzfJiNwXx0k-kFHCnxoCG639QvA8d9zmYzN1CrG-yRxihwN_/exec" 
+    allow="geolocation; microphone; camera">
+  </iframe>
+
+</body>
+</html>
